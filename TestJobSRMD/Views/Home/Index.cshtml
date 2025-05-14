@@ -185,6 +185,15 @@
                 return;
             }
 
+            let date = new Date(Birthdate);
+            let nowDate = new Date();
+
+            if (date > nowDate) {
+                $("#errField").text("Incorrect Birthdate!");
+
+                return;
+            }
+
             if (modalMode == 0) {
                 fetch(`/Home/CreateContact`, {
                     method: 'POST',
