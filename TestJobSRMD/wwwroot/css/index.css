@@ -1,0 +1,12 @@
+﻿.contact-item {
+    outline: solid 1px black;
+}
+
+.contact-item .col {
+    outline: solid 1px #aaaaaa;
+}
+
+.contact-item:hover {
+    cursor: pointer;
+    background-color: ghostwhite;
+}
